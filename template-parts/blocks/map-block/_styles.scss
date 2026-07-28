@@ -1,0 +1,54 @@
+.section.map-block {
+
+    .section__container {
+        @include forContainers;
+    }
+
+    a {
+        position: absolute;
+        background-color: $black;
+        color: $white;
+        text-decoration: none;
+        right: 0.75rem;
+        top: 0.75rem;
+        padding: 0.3em 0.6em;
+        font-size: inherit;
+        border: 1px solid $black;
+
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
+}
+
+
+@media screen and (min-width: $lg) {
+    .section.map-block {
+        a {
+            padding: 0.5em 1.2em;
+            top: 1.5rem;
+            right: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: $xl) {
+    .section.map-block {
+        a {
+            top: 2rem;
+            right: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: $xxl) {
+    .section.map-block {
+        a {
+            top: 3rem;
+            right: 3rem;
+        }
+    }
+}

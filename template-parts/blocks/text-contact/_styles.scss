@@ -1,0 +1,170 @@
+.section.text-contact {
+    .section__container {
+        @include forContainers;
+    }
+
+    .text-content {
+        p {
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .form-content {
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    form {
+        .wpcf7-not-valid-tip {
+            font-size: .75em;
+            line-height: 1em;
+            padding: 0.5rem 0rem 0rem;
+        }
+
+        .wpcf7-form-control-wrap {
+            display: block;
+        }
+
+        input[type=text],
+        input[type=checkbox],
+        input[type=email],
+        input[type=tel],
+        textarea {
+            background-color: transparent;
+            border: 0px;
+            border-bottom: 1px solid $black;
+            color: $black;
+            appearance: none;
+            -webkit-appearance: none;
+            width: 100%;
+
+            &::placeholder {
+                text-transform: uppercase;
+                color: $black;
+            }
+
+            &:focus {
+                outline-color: $black;
+            }
+        }
+
+        textarea {
+            background-color: $gray;
+            padding: 1rem;
+            border-bottom: 0px;
+        }
+
+        .acceptance {
+            display: flex;
+
+            &__text {
+                font-size: 0.75em;
+                line-height: 1.35em;
+            }
+
+            .wpcf7-list-item {
+                margin-left: 0;
+                margin-right: 1.5em;
+            }
+
+            input[type=checkbox]{
+                appearance: none;
+                -webkit-appearance: none;
+                width: 1.5em;
+                height: 1.5em;
+                border: 1px solid $black;
+
+                &:checked {
+                    background-image: url('../img/check.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 80% auto;
+                }
+            }
+        }
+
+        .form__submit {
+            & > p {
+                display: flex;
+
+                input[type=submit] {
+                    order: 1;
+                }
+
+                span.wpcf7-spinner {
+                    order: 3;
+                }
+
+                span.arrow {
+                    order: 2;
+                    background-image: url(../img/submit-btn-arrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: top 50% right 1rem;
+                    background-size: auto 1.5em;
+                    width: 0rem;
+                    opacity: 0;
+                    transition: all .2s;
+                    height: 2em;
+                    padding: 0.5em 0em;
+
+                    transition: all 0.2s;
+
+                    &.show {
+                        opacity: 1;
+                        width: 6rem;
+                    }
+                }
+            }
+        }
+
+        .submit {
+            text-transform: uppercase;
+            color: inherit;
+            padding: 0.5em 0;
+            
+            display: inline-flex;
+            align-items: center;
+            height: 1em;
+            line-height: 1em;
+            width: max-content;
+            font-size: inherit;
+            height: auto;
+            border: 0px;
+            background-color: transparent;
+            transition: background-position 0.2s;
+        }
+
+        &.wpcf7-form.init,
+        &.wpcf7-form.sent {
+            .submit {
+
+                &:hover {
+                    background-position: top 50% right 0rem !important;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (min-width: $xl) {
+    .section.text-contact {
+        form {
+            .form__submit {
+                p {
+                    display: flex;
+                    align-items: flex-end;
+                    position: static;
+                    flex-direction: column;
+                }
+
+                span.arrow {
+                    position: absolute;
+                    left: 100%;
+                }
+            }
+        }
+    }
+}

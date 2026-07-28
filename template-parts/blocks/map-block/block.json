@@ -1,0 +1,12 @@
+{
+    "name": "acf/map-block",
+    "title": "Karten-Block",
+    "description": "Abschnitt mit Karte und Routenplanner",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["map", "karte", "routenplanner", "road"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "map-block.php"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "acf/text-img-bio",
+    "title": "Text/Bild Vita",
+    "description": "Abschnitt mit Text (gerade) und Bild für Vita",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["text", "text mit bild", "bild und text", "bild", "straight", "gerade", "bio", "vita"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "text-img-bio.php" 
+    }
+}  

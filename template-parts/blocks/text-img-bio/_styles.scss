@@ -1,0 +1,13 @@
+.section.text-img-bio {
+
+    .section__container {
+        @include forContainers;
+    }
+    
+    p {
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

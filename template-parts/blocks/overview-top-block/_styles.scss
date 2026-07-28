@@ -1,0 +1,14 @@
+.section.overview-top-block {
+    .section__container {
+        @include forContainers;
+    }
+}
+
+@media screen and (min-width: $lg){
+    .section.overview-top-block {
+        .heading-br {
+            text-align: right;
+            display: block;
+        }
+    }
+}

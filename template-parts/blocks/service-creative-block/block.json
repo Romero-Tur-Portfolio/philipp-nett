@@ -1,0 +1,12 @@
+{
+    "name": "acf/service-creative-block",
+    "title": "Leistungs-Kreativelement",
+    "description": "Leistungs-Kreativelement mit Bild, Teaser-Text, Excerpt-Text, und Link",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["service", "leistung", "kreativ", "bild", "teaser-bild", "teaser", "teaser-text", "excerpt", "creative"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "service-creative-block.php"
+    }
+}

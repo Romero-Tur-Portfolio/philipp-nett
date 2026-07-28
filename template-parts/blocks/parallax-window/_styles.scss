@@ -1,0 +1,25 @@
+.section.parallax-window {
+
+    .section__container {
+        @include forContainers;
+    }
+
+    .img-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        max-width: $fhd-width;
+        margin: 0 auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "acf/start-top-block",
+    "title": "Top-Block (Startseite)",
+    "description": "Top-Teil für die Startseite",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["top", "head", "start", "kopf"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "start-top-block.php"
+    }
+}

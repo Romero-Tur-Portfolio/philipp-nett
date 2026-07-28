@@ -1,0 +1,61 @@
+.section.text-img-zig-zag {
+
+    .section__container {
+        @include forContainers;
+    }
+
+    .img-content {
+
+        img {
+            width: 100%;
+            height: auto;
+        } 
+    }
+
+    p {
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media screen and (min-width: $md){
+    .section.text-img-zig-zag {
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: $lg){
+    .section.text-img-zig-zag {
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: $xl){
+    .section.text-img-zig-zag {
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: $xxl){
+    .section.text-img-zig-zag {
+        p {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: $xxxl){
+    .section.text-img-zig-zag {
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+}

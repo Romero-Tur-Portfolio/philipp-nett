@@ -1,0 +1,128 @@
+$white: #fff;
+$gray: #e4e9e4;
+$green: #D1E1BC;
+$moor: #B5C6B7;
+$pale-moor: #CAD4CA;
+$black: #555B57;
+
+@mixin color-black {
+    color: $black;
+    
+    p {
+        color: $black; 
+    }
+    a {
+        color: $black;
+    }
+}
+
+@mixin color-green {
+    color: $green;
+
+    p {
+        color: $green;
+    }
+    a {
+        color: $green;
+    }
+}
+
+@mixin color-white {
+    color: $white;
+
+    p {
+        color: $white;
+    }
+    a {
+        color: $white;
+    }
+}
+
+@mixin color-sage {
+    color: $moor;
+
+    p {
+        color: $moor;
+    }
+    a {
+        color: $moor;
+    }
+}
+
+@mixin bg-green {
+    background-color: $green;
+}
+
+@mixin bg-gray {
+    background-color: $gray;
+}
+
+@mixin bg-white {
+    background-color: $white;
+}
+
+@mixin bg-black {
+    background-color: $black;
+}
+
+@mixin bg-pale-moor {
+    background-color: $pale-moor;
+}
+
+@mixin bg-transparent {
+    background-color: transparent;
+}
+
+.bg-green {
+    @include bg-green;
+}
+
+.bg-gray {
+    @include bg-gray;
+}
+
+.bg-white {
+    @include bg-white;
+}
+
+.bg-black {
+    @include bg-black;
+}
+
+.bg-pale-moor {
+    @include bg-pale-moor;
+}
+
+.bg-transparent {
+    @include bg-transparent;
+}
+
+
+.color-white {
+    @include color-white;
+}
+
+.color-green {
+    @include color-green;
+}
+
+.color-sage {
+    @include color-sage;
+}
+
+
+
+
+@each $width, $value in $widths {
+    @media screen and ( min-width: $value ) {
+        .color-#{$width}-white {
+            @include color-white;
+        }
+        .color-#{$width}-black {
+            @include color-black;
+        }
+        .bg-#{$width}-transparent {
+            @include bg-transparent;
+        }
+    }
+}

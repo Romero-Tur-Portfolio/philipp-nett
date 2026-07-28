@@ -1,0 +1,12 @@
+{
+    "name": "acf/code-block",
+    "title": "Code-Abschnitt",
+    "description": "Abschnitt mit Code",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["code"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "code-block.php"
+    }
+}

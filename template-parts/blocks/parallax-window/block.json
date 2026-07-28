@@ -1,0 +1,12 @@
+{
+    "name": "acf/parallax-window",
+    "title": "Parallax-Fenster",
+    "description": "Fenster mit Hintergrund und Parallax-Effekt",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["parallax", "bild", "fenster"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "parallax-window.php" 
+    }
+}

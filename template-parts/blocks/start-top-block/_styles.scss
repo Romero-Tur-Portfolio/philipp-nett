@@ -1,0 +1,46 @@
+.section.start-top-block {
+    .section__container {
+        @include forContainers;
+    }
+}
+
+#avis {
+    position: relative;
+    font-size: 15px;
+
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }    
+}
+
+#avis__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+@media screen and (min-width: $md){
+    #avis {
+        font-size: calc(clamp(0.938rem, 0.26vw + 0.813rem, 1.125rem));
+    }
+}
+
+@media screen and (min-width: $lg){
+    #avis {
+        max-width: 445px;
+    }
+    .start-top-block__content {
+        bottom: 0px;
+        z-index: 1;
+    }    
+    .heading-br {
+        text-align: right;
+        span {
+            display: block;
+        }
+    }
+}

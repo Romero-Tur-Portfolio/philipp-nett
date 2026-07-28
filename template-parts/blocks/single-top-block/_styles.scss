@@ -1,0 +1,5 @@
+.section.single-top-block {
+    .section__container {
+        @include forContainers;
+    }
+}

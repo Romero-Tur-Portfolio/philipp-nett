@@ -1,0 +1,12 @@
+{
+    "name": "acf/page-suggest-block",
+    "title": "Seiten-Vorschlag-Block",
+    "description": "Block mit Seiten-Vorschlägen",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["suggest", "vorschlag", "link", "page", "seite"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "page-suggest-block.php"
+    }
+}  

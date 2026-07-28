@@ -1,0 +1,20 @@
+.section.text-block {
+
+    .section__container {
+        @include forContainers;
+    }
+    
+    p {
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    h2 {
+        @include heading-lg;
+    }
+
+    h3 {
+        @include heading-md;
+    }
+}

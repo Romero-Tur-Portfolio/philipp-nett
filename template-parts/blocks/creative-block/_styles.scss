@@ -1,0 +1,48 @@
+.section.creative-block {
+
+    &:hover {
+        .teaser-heading {
+            opacity: 0;
+        }
+    }
+
+    .section__container {
+        @include forContainers;
+    }
+
+    .teaser-heading {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $white;
+        opacity: 1;
+        align-items: center;
+        font-family: 'Quaria', serif;
+        pointer-events: none;
+        transition: opacity 0.3s;
+
+        p {
+            font-size: 5rem;
+            text-transform: uppercase;
+        }
+    }
+
+    p {
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media screen and (min-width: $lg){
+    .section.creative-block {
+        .teaser-heading {
+            p {
+                font-size: calc(clamp(5rem, 12.931vw - 3.017rem, 12.5rem));
+            }
+        }
+    }
+}

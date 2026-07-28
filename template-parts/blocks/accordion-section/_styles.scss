@@ -1,0 +1,53 @@
+.section.faq {
+
+    .bg-blank {
+        background-color: $white;
+        padding: 3%;
+    }
+    
+    .accordion-item {
+        background-color: transparent;
+        border: 0px;
+        border-radius: 0;
+
+        .accordion-button {
+            background-color: transparent;
+            font-weight: 700;
+            padding-left: 35px;
+
+            &:focus {
+                outline: none;
+                box-shadow: none,
+            }
+
+            &:not(.collapsed) {
+                color: inherit;
+                background-color: inherit;
+                box-shadow: none;
+
+                &::after {
+                    transform: rotate(-270deg);
+                    margin-top: 4px;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                left: 0;
+                top: 19px;
+                background-image: url('../img/arrow-next.svg');
+                background-size: auto 100%;
+            }
+        }
+
+        .accordion-body {
+            padding-left: 35px;
+        }
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+
+}

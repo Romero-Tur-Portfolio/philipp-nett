@@ -1,0 +1,12 @@
+{
+    "name": "acf/overview-top-block",
+    "title": "Top-Block (Deckblatt)",
+    "description": "Top-Teil für die Deckblattseite",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["top", "head", "overview", "deckblatt", "kopf"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "overview-top-block.php"
+    }
+}

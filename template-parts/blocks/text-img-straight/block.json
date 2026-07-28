@@ -1,0 +1,12 @@
+{
+    "name": "acf/text-img-straight",
+    "title": "Text/Bild gerade",
+    "description": "Abschnitt mit Text (gerade) und Bild",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["text", "text mit bild", "bild und text", "bild", "straight", "gerade"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "text-img-straight.php" 
+    }
+}  

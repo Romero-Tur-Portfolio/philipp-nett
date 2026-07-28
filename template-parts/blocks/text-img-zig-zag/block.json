@@ -1,0 +1,12 @@
+{
+    "name": "acf/text-img-zig-zag",
+    "title": "Text/Bild Zig-Zag",
+    "description": "Abschnitt mit Text (in zig-zag Form) und Bild",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["text", "text mit bild", "zig-zag", "bild und text", "bild"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "text-img-zig-zag.php" 
+    }
+}  

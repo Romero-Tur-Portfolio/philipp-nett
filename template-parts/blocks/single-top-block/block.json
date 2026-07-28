@@ -1,0 +1,12 @@
+{
+    "name": "acf/single-top-block",
+    "title": "Top-Block (Single)",
+    "description": "Top-Teil für die Single-Seite",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["top", "head", "single", "einzeln", "kopf"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "single-top-block.php"
+    }
+}

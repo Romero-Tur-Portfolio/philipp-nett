@@ -1,0 +1,12 @@
+{
+    "name": "acf/accordion-section",
+    "title": "Accordion-Abschnitt",
+    "description": "Accordion-Abschnitt",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["accordion", "fragen", "qa", "aq"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "accordion-section.php"
+    }
+}

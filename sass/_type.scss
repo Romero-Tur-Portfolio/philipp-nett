@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Quaria';
+    src: url('../fonts/Quaria-Regular.woff') format('woff');
+}
+
+@mixin paragraph {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin-bottom: 0px;
+}
+
+@mixin heading-xl {
+    font-family: 'Quaria', serif;
+    font-size: 46px;
+    line-height: 1em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+@mixin heading-lg {
+    font-family: 'Quaria', serif;
+    font-size: 40px;
+    line-height: 1.2em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+@mixin heading-md {
+    font-size: 25px;
+    font-family: 'Quaria', serif;
+    line-height: 1.2em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+@mixin heading-flow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    line-height: 1.33em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    @include paragraph;
+}
+
+.heading-xl {
+    @include heading-xl;
+}
+
+.heading-lg {
+    @include heading-lg;
+}
+
+.heading-md {
+    @include heading-md;
+}
+
+.heading-flow {
+    @include heading-flow;
+}
+
+.text-shadow {
+    text-shadow: 0px 0px 40px $black;
+}
+
+@media screen and (min-width: $md){
+
+    .paragraph {
+        font-size: calc(clamp(1rem, 0.347vw + 0.833rem, 1.25rem));
+    }
+
+    .heading-xl {
+        font-size: calc(clamp(3.125rem, 4.34vw + 1.042rem, 6.25rem)); // 50 (768) - 100 (1920)
+    }
+
+    .heading-lg {
+        font-size: calc(clamp(2.5rem, 0.868vw + 2.083rem, 3.125rem)); // 40 (768) - 50 (1920)
+    }
+
+    .heading-md {
+        font-size: calc(clamp(1.563rem, 0.434vw + 1.354rem, 1.875rem)); // 25 (768) - 30 (1920)
+    }
+
+    .heading-flow {
+        font-size: calc(clamp(1.625rem, 0.347vw + 1.458rem, 1.875rem)); // 26 (768) - 30 (1920)
+    }
+}
+

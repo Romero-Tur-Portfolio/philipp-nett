@@ -1,0 +1,145 @@
+.section.body-slider {
+
+    .slick-slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section__container {
+        @include forContainers;
+    }
+
+    .slider {
+        padding-bottom: 4rem;
+        position: static;
+    }
+
+    .slideIndex {
+        @include heading-md;
+        font-family: 'Quaria', serif;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        color: $black;
+        flex-direction: row;
+        left: calc(100% - 0.75rem - 10rem);
+
+        & > div {
+            height: 3rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        border: 0;
+        background-color: transparent;
+        width: 3rem;
+        padding: 0px;
+        height: 3rem;
+        bottom: 0;
+        z-index: 1;
+
+        &.slick-prev {
+            background-image: url('../img/arrow-prev.svg');
+            left: calc(100% - 0.75rem - 6rem);
+        }
+
+        &.slick-next {
+            background-image: url('../img/arrow-next.svg');
+            left: calc(100% - 0.75rem - 3rem);
+        }
+    }
+}
+
+@media screen and (min-width: $lg) {
+    .section.body-slider {
+
+        .slider {
+            padding-bottom: 0;
+        }
+
+        .slick-arrow {
+
+            &.slick-prev {
+                left: calc(0rem + 3rem);
+            }
+
+            &.slick-next {
+                left: calc(9rem + 3rem);
+            }
+        }
+
+        .slideIndex {
+            left: calc(4rem + 3rem);
+            width: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: $xl) {
+    .section.body-slider {
+
+        .slick-arrow {
+
+            &.slick-prev {
+                left: calc(0rem + 6rem);
+            }
+
+            &.slick-next {
+                left: calc(9rem + 6rem);
+            }
+        }
+
+        .slideIndex {
+            left: calc(4rem + 6rem);
+            width: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: $xxl) {
+    .section.body-slider {
+
+        .slick-arrow {
+
+            &.slick-prev {
+                left: calc(0rem + 8rem);
+            }
+
+            &.slick-next {
+                left: calc(9rem + 8rem);
+            }
+        }
+
+        .slideIndex {
+            left: calc(4rem + 8rem);
+            width: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: $xxxl) {
+    .section.body-slider {
+
+        .slick-arrow {
+
+            &.slick-prev {
+                left: calc(0rem + 9rem);
+            }
+
+            &.slick-next {
+                left: calc(9rem + 9rem);
+            }
+        }
+
+        .slideIndex {
+            left: calc(4rem + 9rem);
+            width: 4rem;
+        }
+    }
+}

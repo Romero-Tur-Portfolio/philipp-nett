@@ -1,0 +1,12 @@
+{
+    "name": "acf/services-overview-block",
+    "title": "Leistungen-Übersicht",
+    "description": "Übersicht der partikulären Leistungen",
+    "category": "formatting",
+    "icon": "editor-paste-text",
+    "keywords": ["part", "particular", "partikulär", "deckblatt", "leistungen", "services"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "services-overview-block.php"
+    }
+}

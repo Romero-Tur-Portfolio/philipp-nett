@@ -1,0 +1,62 @@
+.section.service-creative-block {
+
+    .section__container {
+        @include forContainers;
+    }
+
+    p {
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    .img-content {
+        img {
+            transition: opacity 0.3s;
+        }
+    }
+    
+    .btn {
+        img {
+            transition: opacity 0.3s;
+        }
+
+        img.passive {
+            opacity: 1;
+        }
+        img.hover {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (min-width: $lg){
+    .section.service-creative-block {
+        .img-content {
+            img {
+                opacity: 0;
+            }
+        }
+
+        &:hover {
+            .img-content {
+                img {
+                    opacity: 1;
+                }
+            }
+
+            .btn {
+                img.passive {
+                    opacity: 0;
+                }
+                img.hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

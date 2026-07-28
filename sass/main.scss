@@ -1,0 +1,45 @@
+@import 'vars_+_grids.scss';
+@import 'swatches_+_colors.scss';
+@import 'type.scss';
+@import '_misc.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import '../template-parts/blocks/body-slider/styles.scss';
+@import '../template-parts/blocks/start-top-block/styles.scss';
+@import '../template-parts/blocks/overview-top-block/styles.scss';
+@import '../template-parts/blocks/single-top-block/styles.scss';
+@import '../template-parts/blocks/text-img-straight/styles.scss';
+@import '../template-parts/blocks/text-img-zig-zag/styles.scss';
+@import '../template-parts/blocks/creative-block/styles.scss';
+@import '../template-parts/blocks/service-creative-block/styles.scss';
+@import '../template-parts/blocks/contact-section/styles.scss';
+@import '../template-parts/blocks/map-block/styles.scss';
+@import '../template-parts/blocks/services-overview-block/styles.scss';
+@import '../template-parts/blocks/parallax-window/styles.scss';
+@import '../template-parts/blocks/text-block/styles.scss';
+@import '../template-parts/blocks/text-img-bio/styles.scss';
+@import '../template-parts/blocks/page-suggest-block/styles.scss';
+@import '../template-parts/blocks/text-contact/styles.scss';
+
+body {
+    background-color: $white;
+    @include color-black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: $md){
+    body {
+        font-size: calc(clamp(1rem, 0.347vw + 0.833rem, 1.25rem));
+    }
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+p {
+    a {
+        word-break: break-word;
+    }
+}
